@@ -50,7 +50,7 @@ internal class BinaryTreeTest {
     }
 
     private fun createDummyTree(treeValues: List<Int?>, currentNode: TreeNode?): TreeNode? {
-        if(currentNode != null) {
+        if (currentNode != null) {
             currentNode.left = treeValues[1]?.let(moveNextValueToTreeNode(treeValues))
             currentNode.right = treeValues[2]?.let(moveNextValueToTreeNode(treeValues))
         }

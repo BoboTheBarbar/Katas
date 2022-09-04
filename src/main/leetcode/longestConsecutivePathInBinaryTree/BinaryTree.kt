@@ -18,7 +18,7 @@ class TreeNode(var `val`: Int) {
 class BinaryTree {
     companion object {
         fun longestConsecutive(root: TreeNode?): Int {
-            if(root != null) {
+            if (root != null) {
                 val currentStreak: Int = 1
                 val longestLeftConsecutive = searchLongestStreak(root.left, root.`val`, currentStreak, currentStreak)
                 val longestRightConsecutive = searchLongestStreak(root.right, root.`val`, currentStreak, currentStreak)
@@ -29,7 +29,7 @@ class BinaryTree {
         }
 
         private fun searchLongestStreak(node: TreeNode?, lastValue: Int, currentStreak: Int, longestStreak: Int): Int {
-            if(node != null) {
+            if (node != null) {
                 val newStreak = calcCurrentStreak(currentStreak, node.`val`, lastValue)
                 val newLongestStreak = max(newStreak, longestStreak)
 
@@ -49,4 +49,4 @@ class BinaryTree {
 }
 
 //fun Int.isDecrementOf(value: Int) : Boolean = (this == value - 1)
-fun Int.isIncrementtOf(value: Int) : Boolean = (this == value + 1)
+fun Int.isIncrementtOf(value: Int): Boolean = (this == value + 1)
