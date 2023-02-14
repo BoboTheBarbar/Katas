@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/consoleApp.iml" filepath="$PROJECT_DIR$/consoleApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.katas.katas.main.iml" filepath="$PROJECT_DIR$/.idea/modules/de.katas.katas.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/katas.main.iml" filepath="$PROJECT_DIR$/.idea/modules/katas.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/katas.test.iml" filepath="$PROJECT_DIR$/.idea/modules/katas.test.iml" />
     </modules>
   </component>
 </project>
